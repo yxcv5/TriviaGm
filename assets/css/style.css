@@ -1,0 +1,98 @@
+
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;    
+}
+
+.container {
+	background-image: url("../images/background.jpg");
+	height: 100%;
+	min-height: 100vh;
+	max-width: 1150px;
+  font-family:'Georgia';
+}
+
+.page-header {
+	color: #0d7d0f;
+	font-size: 45px;	
+	line-height: 2;
+    letter-spacing: 5px;
+	font-weight:900;
+}
+
+#main_section {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 85vh;
+}
+
+#start, #quiz_section, #summary {
+	position: absolute;
+	width:100%;
+    left: 0;
+    top: 0;
+}
+
+#start {
+  z-index: 5; 
+}
+
+button {
+  width: 50%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#start_button {
+	margin-top: 20%;
+}
+
+.wrapper {
+	position: relative;
+	text-align: center;
+	width: 60%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+#choices {
+	position: absolute;
+	left: 0;
+    top: 0;
+	width: 100%;
+	font-size: 24px;
+}
+
+#imgDiv {
+    z-index: 3;
+    position: absolute;
+	left: 0;
+    top: 0;
+	width: 100%;
+	padding-bottom: 20px;
+	display: none;
+}
+
+#imgDiv img {
+	width: 400px;
+	height: 300px;
+}
+
+#summary {
+  z-index: 4;
+  text-align: center;
+  display: none;
+}
+
+#restart_button {
+	margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    
+  #main_section {
+    width:100%;
+  } 
